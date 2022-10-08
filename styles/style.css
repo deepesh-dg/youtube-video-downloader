@@ -1,0 +1,88 @@
+:root {
+    --primary: green;
+    --primary-color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px 0px 10px;
+    display: block;
+}
+
+a,
+a:hover,
+a:active,
+a:visited
+{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+body {
+    margin: 0px;
+    padding: 12px;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body > * {
+    display: block;
+    width: 100%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 0px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s all;
+    background-color: var(--primary);
+    color: var(--primary-color);
+}
+
+.copyright {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.socialIcons {
+    text-align: center;
+}
+
+.socialIcons a {
+    display: inline-block;
+}
+
+.socialIcons a img {
+    width: 48px;
+    height: auto;
+    margin: 0px 4px;
+}
+
+.socialIcons a:first-child img {
+    margin-left: 0px;
+}
+
+.socialIcons a:last-child img {
+    margin-right: 0px;
+}

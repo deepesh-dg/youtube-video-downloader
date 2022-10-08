@@ -1,0 +1,38 @@
+{
+    "name": "Offline Youtube",
+    "version": "0.2.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*",
+                "https://yt5s.com/*",
+                "https://music.youtube.com/*",
+                "https://youtubemultidownloader.net/*"
+            ],
+            "css": [],
+            "js": [
+                "/scripts/index.js",
+                "/scripts/youtube.js",
+                "/scripts/yt5s.js",
+                "/scripts/youtubeMusic.js",
+                "/scripts/youtubeMultiDownloader.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/images/logo-128x128.jpg"
+        }
+    },
+    "icons": {
+        "128": "/images/logo-128x128.jpg"
+    },
+    "permissions":[
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
